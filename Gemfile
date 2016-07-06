@@ -13,6 +13,8 @@ gem 'bootstrap', '~> 4.0.0.alpha3'
 # Use tether
 gem 'rails-assets-tether'
 
+gem 'tzinfo-data'
+
 # Use rails_12 factors
 gem 'rails_12factor', group: 'production'
 
