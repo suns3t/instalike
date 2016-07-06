@@ -1,16 +1,5 @@
 default: &default
   adapter: postgresql
-<<<<<<< HEAD
-  encoding: unicode
-  # For details on connection pooling, see rails configuration guide
-  # http://guides.rubyonrails.org/configuring.html#database-pooling
-  pool: 5
-
-development:
-  <<: *default
-  database: instalike_development
-  template: template0
-=======
   pool: 5
   timeout: 5000
 
@@ -20,25 +9,14 @@ development:
   database: instalike
   username: ubuntu
   password: 12345
->>>>>>> c78c3d749e76b32dffcb3e5ed76ff7d1dac2c2f3
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-<<<<<<< HEAD
-  database: instalike_test
-  template: template0
-
-production:
-  <<: *default
-  database: instalike_production
-  template: template0
-=======
   database: db/test
 
 production:
   <<: *default
   database: db/production
->>>>>>> c78c3d749e76b32dffcb3e5ed76ff7d1dac2c2f3
